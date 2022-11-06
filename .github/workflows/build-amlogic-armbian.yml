@@ -12,7 +12,7 @@ on:
       set_release:
         description: "Select OS Release."
         required: false
-        default: "jammy"
+        default: "bullseye"
         type: choice
         options:
           - jammy
@@ -20,7 +20,7 @@ on:
       armbian_soc:
         description: "Select Amlogic SoC."
         required: false
-        default: "all"
+        default: "s912"
         type: choice
         options:
           - all
@@ -63,7 +63,7 @@ on:
       armbian_size:
         description: "Set armbian rootfs size(Unit: MiB)."
         required: false
-        default: "2560"
+        default: "25000"
       armbian_fstype:
         description: "Select armbian rootfs type."
         required: false
